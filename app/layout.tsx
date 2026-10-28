@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 
-const title = "Frederico Foini — Senior Product Owner";
+const title = "Frederico Foini — Data Analytics, Growth & Product";
 const description =
-  "I’m a Senior Product Owner in São Paulo with 7+ years across digital products, growth, business analysis, and cross-functional delivery.";
+  "I’m a Senior Data Analyst in São Paulo with 7+ years across growth analytics, business performance, customer journeys, and digital product.";
 const baseUrl = "https://fredfoini.github.io/website";
 
 export const metadata: Metadata = {
@@ -15,8 +15,13 @@ export const metadata: Metadata = {
   creator: "Frederico Foini",
   keywords: [
     "Frederico Foini",
-    "Senior Product Owner",
-    "Product Management",
+    "Senior Data Analyst",
+    "Data Analytics",
+    "Growth Analytics",
+    "Product Analytics",
+    "SQL",
+    "Google BigQuery",
+    "Power BI",
     "Business Analysis",
     "São Paulo",
     "Coca-Cola FEMSA",
@@ -37,7 +42,7 @@ export const metadata: Metadata = {
         url: `${baseUrl}/og.png`,
         width: 1200,
         height: 630,
-        alt: "Frederico Foini — Senior Product Owner",
+        alt: "Frederico Foini — Data Analytics, Growth & Product",
       },
     ],
   },

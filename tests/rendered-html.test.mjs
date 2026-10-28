@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
-async function render(pathname = "/") {
+async function render(pathname = "/website/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
@@ -29,14 +29,16 @@ test("server-renders Frederico Foini's portfolio", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Frederico Foini — Senior Product Owner<\/title>/i);
-  assert.match(html, /Turning complexity into/);
+  assert.match(html, /<title>Frederico Foini — Data Analytics, Growth &amp; Product<\/title>/i);
+  assert.match(html, /Turning data into/);
+  assert.match(html, /Sandbox Group/);
   assert.match(html, /Coca-Cola FEMSA/);
-  assert.match(html, /Senior Product Owner/);
+  assert.match(html, /Senior Data Analyst/);
+  assert.match(html, /Google BigQuery/);
   assert.match(html, /Product Pulse/);
   assert.match(html, /Infinita/);
   assert.match(html, /monster-portrait-selective\.webp/);
-  assert.match(html, /At Coca-Cola FEMSA, I connected/);
+  assert.match(html, /Across Sandbox Group and Coca-Cola FEMSA/);
   assert.match(html, /About me/);
   assert.match(html, /Write to me/);
   assert.doesNotMatch(html, /Frederico (connected|coordinated|redesigned|is actively shaping|is a Senior Product Owner)/);
@@ -54,7 +56,7 @@ test("ships portfolio metadata and required downloadable assets", async () => {
 
   assert.match(page, /framer-motion/);
   assert.match(page, /prefers-reduced-motion|reducedMotion/);
-  assert.match(layout, /Frederico Foini — Senior Product Owner/);
+  assert.match(layout, /Frederico Foini — Data Analytics, Growth & Product/);
   assert.match(layout, /openGraph/);
   assert.match(packageJson, /"framer-motion"/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);

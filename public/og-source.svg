@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="78%" cy="52%" r="65%">
+      <stop offset="0" stop-color="#123d78" stop-opacity=".86"/>
+      <stop offset=".52" stop-color="#0b1c33" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#070b12" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop stop-color="#efcf91"/>
+      <stop offset=".5" stop-color="#c59245"/>
+      <stop offset="1" stop-color="#f4d9a2"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#c9d5e4" stroke-opacity=".10"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#070b12"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="656" width="544" height="630" fill="url(#grid)"/>
+  <g fill="none" stroke="#d6ae62">
+    <circle cx="967" cy="315" r="222" stroke-opacity=".55" stroke-width="1.5"/>
+    <circle cx="967" cy="315" r="160" stroke-opacity=".38" stroke-dasharray="2 5"/>
+    <circle cx="967" cy="315" r="99" stroke-opacity=".44"/>
+    <circle cx="967" cy="315" r="34" stroke-opacity=".65"/>
+    <path d="M656 315H1200M967 0V630" stroke-opacity=".42"/>
+    <path d="M545 0L914 630" stroke="url(#gold)" stroke-width="2"/>
+  </g>
+  <circle cx="967" cy="315" r="8" fill="#d6ae62" stroke="#070b12" stroke-width="4"/>
+  <rect x="30" y="35" width="67" height="67" fill="none" stroke="#d6ae62"/>
+  <text x="44" y="82" fill="#e4bd76" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="300">FF</text>
+  <text x="40" y="262" fill="url(#gold)" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" letter-spacing="-2">FREDERICO FOINI</text>
+  <text x="42" y="310" fill="#e6be78" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500" letter-spacing="5">DATA ANALYTICS · GROWTH · PRODUCT</text>
+  <rect x="42" y="337" width="110" height="3" fill="#c9152b"/>
+  <rect x="160" y="337" width="80" height="3" fill="#b78135"/>
+  <text x="40" y="423" fill="#f0e5d2" font-family="Georgia, Times New Roman, serif" font-size="52">Turning data into</text>
+  <text x="40" y="486" fill="#f0d59b" font-family="Georgia, Times New Roman, serif" font-size="58" font-style="italic">measurable growth.</text>
+  <text x="43" y="584" fill="#e6be78" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="1">São Paulo  ·  SQL  ·  BigQuery  ·  BI</text>
+</svg>

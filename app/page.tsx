@@ -33,17 +33,30 @@ import {
 
 const career = [
   {
-    period: "2022 — 2026",
-    dates: "May 2022 — June 2026",
-    role: "Marketing Coordinator",
-    qualifier: "Product Owner responsibilities",
-    company: "Coca-Cola FEMSA",
+    period: "2026 — Present",
+    dates: "September 2026 — Present",
+    role: "Project / Growth Specialist",
+    qualifier: "Data Analytics responsibilities",
+    company: "Sandbox Group",
     location: "São Paulo, Brazil",
     accent: true,
     achievements: [
-      "I led Brazil’s rollout of Braze and Amplitude with teams across Brazil, Mexico, Deloitte, and Coca-Cola—delivering both platforms within one month.",
-      "I improved promotion conversion by 15% and reduced the Juntos deployment cycle by 20% through product frameworks, UX/UI refinement, and cross-functional process redesign.",
-      "I advanced B2C commerce growth with iFood, Amazon, Daki, Rappi, PedidosYa, and internal teams across Argentina and Uruguay.",
+      "I own the Web and Marketing Analytics initiative, building a centralized warehouse that connects Meta Ads, Google Ads, Google Analytics, and first-party data.",
+      "I use SQL and Google BigQuery to analyze the acquisition and conversion funnel hourly, with New Buyers as the North Star metric.",
+      "My cart-abandonment analysis and cross-platform data integration contributed to a 50% reduction in CAC and doubled daily sales.",
+    ],
+  },
+  {
+    period: "2022 — Present",
+    dates: "May 2022 — Present",
+    role: "Marketing Coordinator",
+    qualifier: "Data Analytics responsibilities",
+    company: "Coca-Cola FEMSA",
+    location: "São Paulo, Brazil",
+    achievements: [
+      "I analyzed promotions, customer behavior, campaign performance, and conversion for Juntos+, increasing promotion conversion by 15% while managing more than R$5 million in budget.",
+      "I led Brazil’s rollout of Braze and Amplitude across Brazil, Mexico, Deloitte, and Coca-Cola FEMSA, delivering both platforms within one month.",
+      "I used partner performance analytics across iFood, Amazon, Daki, Rappi, and PedidosYa to drive B2C growth, including increasing Monster Energy’s share of sales from 35% to 49%.",
     ],
   },
   {
@@ -71,7 +84,7 @@ const career = [
   {
     period: "2019 — 2020",
     dates: "December 2019 — February 2020",
-    role: "Product Owner",
+    role: "Developer",
     company: "Foini Consultores",
     location: "São Paulo, Brazil",
     achievements: [
@@ -92,10 +105,10 @@ const career = [
 ];
 
 const metrics = [
-  { value: 15, prefix: "+", suffix: "%", label: "promotion conversion" },
-  { value: 20, prefix: "−", suffix: "%", label: "deployment cycle" },
-  { value: 5, prefix: "R$", suffix: "M+", label: "promotional budget" },
-  { value: 30, prefix: "+", suffix: "%", label: "promotional ROI" },
+  { value: 50, prefix: "−", suffix: "%", label: "CAC at Sandbox Group" },
+  { value: 2, prefix: "", suffix: "×", label: "daily sales at Sandbox Group" },
+  { value: 10, prefix: "+", suffix: " pp", label: "Crystal Water repurchase" },
+  { value: 14, prefix: "+", suffix: " pp", label: "Monster share of sales" },
 ];
 
 const projects = [
@@ -141,28 +154,28 @@ const gallery = [
   {
     src: "/website/media/coca-cola-portrait.webp",
     alt: "Me presenting a Coca-Cola bottle",
-    caption: "Brand, product, and customer experience",
+    caption: "Data-informed brand and customer performance",
     tag: "Coca-Cola FEMSA",
     className: "gallery-tall",
   },
   {
     src: "/website/media/coca-cola-team.webp",
     alt: "Me with colleagues at a Coca-Cola FEMSA event",
-    caption: "Cross-functional delivery in the field",
+    caption: "Cross-functional analytics in the field",
     tag: "Juntos+",
     className: "gallery-wide",
   },
   {
     src: "/website/media/product-presentation.webp",
     alt: "Me presenting a product roadmap to colleagues",
-    caption: "Making complex roadmaps legible",
-    tag: "Product leadership",
+    caption: "Turning analysis into an aligned roadmap",
+    tag: "Data storytelling",
     className: "gallery-standard",
   },
   {
     src: "/website/media/ifood-event.webp",
     alt: "Me at an iFood event",
-    caption: "Partner ecosystems that move together",
+    caption: "Commerce partner performance and growth",
     tag: "B2C commerce",
     className: "gallery-tall",
   },
@@ -176,40 +189,42 @@ const gallery = [
   {
     src: "/website/media/product-event.webp",
     alt: "Me in conversation with colleagues at a product event",
-    caption: "Discovery starts with listening",
-    tag: "Community",
+    caption: "Customer insight before the model",
+    tag: "Research",
     className: "gallery-tall",
   },
 ];
 
 const capabilities = [
-  "Product ownership",
-  "Business analysis",
-  "Roadmap prioritization",
-  "Product discovery",
+  "SQL & BigQuery",
+  "Web & marketing analytics",
+  "Growth analytics",
+  "Funnel & customer journey analysis",
+  "BI & dashboarding",
+  "Acquisition & conversion analytics",
   "Experimentation",
+  "Business analysis",
+  "Product analytics",
   "Stakeholder management",
-  "Growth strategy",
-  "UX & customer feedback",
-  "UAT & test planning",
-  "Cross-functional leadership",
-  "Workflow design",
-  "Operational efficiency",
+  "Data storytelling",
+  "Agile delivery",
+  "Project management",
+  "Communication",
 ];
 
 const tools = [
+  "SQL",
+  "Google BigQuery",
+  "Power BI",
+  "Looker Studio",
+  "Google Analytics",
+  "Google Ads",
+  "Meta Ads",
+  "Amplitude",
+  "Braze",
   "Jira",
   "Confluence",
-  "Braze",
-  "Amplitude",
-  "Power BI",
   "OKRs",
-  "SharePoint",
-  "MS Project",
-  "Microsoft Visio",
-  "OpenText",
-  "AI",
-  "RPA",
 ];
 
 function Reveal({
@@ -371,7 +386,7 @@ export default function Home() {
             <span className="brand-mark">FF</span>
             <span className="brand-copy">
               <strong>Frederico Foini</strong>
-              <small>Senior Product Owner</small>
+              <small>Data · Growth · Product</small>
             </span>
           </a>
 
@@ -435,7 +450,7 @@ export default function Home() {
                 transition={{ delay: 0.12, duration: 0.7 }}
               >
                 <span className="status-dot" />
-                Senior Product Owner · São Paulo, Brazil
+                Data Analytics · Growth · Product · São Paulo, Brazil
               </motion.div>
 
               <div className="hero-title-wrap">
@@ -445,8 +460,8 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  Turning complexity into
-                  <span>measurable momentum.</span>
+                  Turning data into
+                  <span>measurable growth.</span>
                 </motion.h1>
                 <motion.div
                   className="hero-orbit"
@@ -455,9 +470,9 @@ export default function Home() {
                   transition={{ delay: 0.75, duration: 0.85 }}
                   aria-hidden="true"
                 >
-                  <span>product</span>
+                  <span>data</span>
                   <span>growth</span>
-                  <span>impact</span>
+                  <span>product</span>
                 </motion.div>
               </div>
 
@@ -468,8 +483,8 @@ export default function Home() {
                 transition={{ delay: 0.48, duration: 0.7 }}
               >
                 <p>
-                  I steer digital products through business analysis, experimentation, and cross-functional
-                  delivery—connecting customer insight to outcomes that matter.
+                  I connect analytics, growth, and product to diagnose funnels, understand customer behavior,
+                  and turn complex business questions into measurable action.
                 </p>
                 <div className="hero-actions">
                   <Magnetic>
@@ -502,15 +517,15 @@ export default function Home() {
                 </div>
                 <div className="portrait-caption">
                   <span>7+ years</span>
-                  <p>Product, growth, and digital commerce</p>
+                  <p>Analytics, growth, and digital product</p>
                 </div>
               </motion.div>
             </div>
 
             <div className="hero-foot">
               <div className="hero-foot-note">
-                <span>Selected chapter</span>
-                <strong>Coca-Cola FEMSA · 2022—2026</strong>
+                <span>Current focus</span>
+                <strong>Growth analytics · SQL · BigQuery</strong>
               </div>
               <a className="scroll-cue" href="#impact" aria-label="Scroll to impact section">
                 <span>Scroll</span>
@@ -523,9 +538,9 @@ export default function Home() {
             <div className="page-width">
               <SectionHeading
                 index="01"
-                eyebrow="Signature chapter"
-                title={<>Scale is only useful when it <em>moves.</em></>}
-                copy="At Coca-Cola FEMSA, I connected Marketing, Technology, Sales, Operations, consulting partners, and regional teams to make digital commerce initiatives land—and perform."
+                eyebrow="Analytics in action"
+                title={<>Data becomes valuable when it <em>moves the business.</em></>}
+                copy="Across Sandbox Group and Coca-Cola FEMSA, I connect acquisition, customer, campaign, and product signals to decisions that improve conversion, efficiency, and revenue."
               />
 
               <div className="impact-story">
@@ -545,12 +560,13 @@ export default function Home() {
                 <div className="impact-copy">
                   <Reveal>
                     <div className="impact-role">
-                      <span>May 2022 — June 2026</span>
+                      <span>May 2022 — Present</span>
                       <h3>Marketing Coordinator</h3>
-                      <p>with Product Owner responsibilities</p>
+                      <p>with Data Analytics responsibilities</p>
                     </div>
                   </Reveal>
 
+                  <span className="mini-label">Selected analytics outcomes</span>
                   <div className="metric-grid">
                     {metrics.map((metric, index) => (
                       <Reveal className="metric" delay={index * 0.07} key={metric.label}>
@@ -565,10 +581,10 @@ export default function Home() {
                   <Reveal className="impact-narrative">
                     <span className="mini-label">The operating system</span>
                     <p>
-                      I used customer feedback to shape new promotional frameworks and UX/UI improvements. I
-                      shortened delivery through direct coordination and made learning faster with Braze and
-                      Amplitude instrumentation. The result was a repeatable link between my product decisions and
-                      commercial performance.
+                      At Coca-Cola FEMSA, I use promotion, customer, campaign, and conversion analysis to connect
+                      product and marketing decisions to commercial performance. I improved promotion conversion by
+                      15%, increased Crystal Water repurchase from 30% to 40%, and helped strategic partners grow
+                      market share by more than 5%.
                     </p>
                   </Reveal>
                 </div>
@@ -576,23 +592,23 @@ export default function Home() {
 
               <div className="platform-story">
                 <Reveal className="platform-copy">
-                  <span className="mini-label">Launch velocity</span>
-                  <h3>Two platforms. Four stakeholder groups. One month.</h3>
+                  <span className="mini-label">Current analytics foundation</span>
+                  <h3>One source of truth for the acquisition funnel.</h3>
                   <p>
-                    As Product Owner for the Brazil rollout of Braze and Amplitude, I coordinated teams from Brazil,
-                    Mexico, Deloitte Consulting, and Coca-Cola stakeholders—delivering both platforms within the
-                    planned timeline.
+                    I’m building a centralized data warehouse that integrates Meta Ads, Google Ads, Google
+                    Analytics, and first-party databases. The resulting dashboards make sales, CVR, CAC, channels,
+                    and customer journeys visible in one operating view.
                   </p>
-                  <div className="platform-tags" aria-label="Platform rollout partners">
-                    <span>Braze</span><span>Amplitude</span><span>Brazil</span><span>Mexico</span><span>Deloitte</span>
+                  <div className="platform-tags" aria-label="Analytics tools and channels">
+                    <span>SQL</span><span>BigQuery</span><span>Looker Studio</span><span>Google Analytics</span><span>Meta Ads</span>
                   </div>
                 </Reveal>
                 <Reveal className="platform-visual" delay={0.12}>
                   <div className="visual-rings" aria-hidden="true">
-                    <div className="ring ring-one"><span>Insight</span></div>
-                    <div className="ring ring-two"><span>Build</span></div>
-                    <div className="ring ring-three"><span>Learn</span></div>
-                    <strong>01<br /><small>month</small></strong>
+                    <div className="ring ring-one"><span>Acquire</span></div>
+                    <div className="ring ring-two"><span>Convert</span></div>
+                    <div className="ring ring-three"><span>Grow</span></div>
+                    <strong>2×<br /><small>daily sales</small></strong>
                   </div>
                 </Reveal>
               </div>
@@ -629,7 +645,7 @@ export default function Home() {
                 index="02"
                 eyebrow="Current builds"
                 title={<>Ideas become useful when they become <em>systems.</em></>}
-                copy="I’m actively shaping two products: one turns market noise into product intelligence; the other gives generative storytelling a reliable engine underneath it."
+                copy="Product remains a core part of how I work. These two builds turn data, market signals, and complex systems into focused experiences people can actually use."
               />
 
               <div className="projects-list">
@@ -687,8 +703,8 @@ export default function Home() {
               <SectionHeading
                 index="03"
                 eyebrow="Career progression"
-                title={<>A career built by <em>shipping.</em></>}
-                copy="From organic acquisition and rapid MVPs to regional digital commerce, each chapter expanded my scope without changing my habit of testing the smallest useful move."
+                title={<>A career built by <em>learning in motion.</em></>}
+                copy="From SEO and rapid MVPs to regional commerce and full-funnel analytics, each chapter expanded how I connect evidence, customer behavior, and business outcomes."
               />
 
               <div className="timeline">
@@ -742,8 +758,8 @@ export default function Home() {
               <SectionHeading
                 index="04"
                 eyebrow="Operating stack"
-                title={<>Strategy with its sleeves <em>rolled up.</em></>}
-                copy="I organize my toolkit around one principle: create clarity at the point where customer needs, business goals, and technical delivery meet."
+                title={<>From raw signals to <em>business action.</em></>}
+                copy="I use analytics, growth, and product methods as one connected toolkit—from querying and validating data to explaining what it means and deciding what happens next."
               />
 
               <div className="capability-field">
@@ -773,19 +789,21 @@ export default function Home() {
 
               <div className="stack-columns">
                 <Reveal className="stack-principle">
-                  <span className="mini-label">Product principle</span>
+                  <span className="mini-label">Operating principle</span>
                   <blockquote>
                     “Simplicity is the discipline of making the next useful decision obvious.”
                   </blockquote>
                   <p>
-                    That approach has guided me from a one-week training portal sprint to multi-country promotional
-                    platforms.
+                    That approach guides me from warehouse design and funnel diagnosis to experiments, dashboards,
+                    and product decisions.
                   </p>
                 </Reveal>
                 <Reveal className="language-card" delay={0.1}>
                   <span className="mini-label">Languages</span>
                   <div><strong>English</strong><span>Full professional</span></div>
                   <div><strong>Spanish</strong><span>Full professional</span></div>
+                  <div><strong>Italian</strong><span>Full professional</span></div>
+                  <div><strong>Portuguese</strong><span>Native or bilingual</span></div>
                 </Reveal>
               </div>
             </div>
@@ -799,7 +817,7 @@ export default function Home() {
                   <p>Selected moments</p>
                 </Reveal>
                 <Reveal delay={0.08}>
-                  <h2 id="gallery-title">Products are built<br /><em>between people.</em></h2>
+                  <h2 id="gallery-title">Insights become useful<br /><em>between people.</em></h2>
                 </Reveal>
               </div>
 
@@ -851,9 +869,9 @@ export default function Home() {
                 />
                 <Reveal>
                   <p className="about-lead">
-                    I’m a Senior Product Owner with 7+ years across digital products, growth, business analysis, and
-                    stakeholder engagement. My work lives at the intersection of customer insight, operational
-                    clarity, and commercial outcomes.
+                    I’m a Senior Data Analyst with 7+ years analyzing business performance, optimizing customer
+                    journeys, and delivering measurable outcomes. My background connects Data Analytics, Growth,
+                    Business Analysis, and Product so I can move from evidence to action without losing context.
                   </p>
                 </Reveal>
 
@@ -861,16 +879,23 @@ export default function Home() {
                   <Reveal className="education-column">
                     <span className="mini-label">Education</span>
                     <article>
+                      <span>2026—27</span>
+                      <div>
+                        <strong>Data Engineering & Analytics</strong>
+                        <p>DataCamp · Data Analytics & Business Intelligence</p>
+                      </div>
+                    </article>
+                    <article>
                       <span>2024</span>
                       <div>
-                        <strong>Product Management</strong>
-                        <p>Talent Garden · Milan, Italy</p>
+                        <strong>Master in Product Management</strong>
+                        <p>Talent Garden · Business Administration & Management</p>
                       </div>
                     </article>
                     <article>
                       <span>2021</span>
                       <div>
-                        <strong>Technology in Marketing</strong>
+                        <strong>Bachelor of Technology in Marketing</strong>
                         <p>Universidade Presbiteriana Mackenzie</p>
                       </div>
                     </article>
@@ -885,10 +910,10 @@ export default function Home() {
                   <Reveal className="cert-column" delay={0.1}>
                     <span className="mini-label">Certifications</span>
                     <ul>
+                      <li>How to Build Digital Products</li>
+                      <li>Growth Hacking with Digital Marketing</li>
                       <li>Becoming a Product Manager</li>
-                      <li>Trade Marketing in the Omnichannel Era</li>
-                      <li>SEO Manager Certification</li>
-                      <li>Public Speaking</li>
+                      <li>Identifying Your Customer’s Preferences</li>
                     </ul>
                   </Reveal>
                 </div>
@@ -904,7 +929,7 @@ export default function Home() {
                 Let’s make the next move useful
               </Reveal>
               <Reveal className="contact-title" delay={0.08}>
-                <h2>Have a product challenge<br />worth <em>unpacking?</em></h2>
+                <h2>Have a challenge in<br />data, growth, or <em>product?</em></h2>
               </Reveal>
               <Reveal className="contact-actions" delay={0.16}>
                 <Magnetic>
@@ -931,7 +956,7 @@ export default function Home() {
               </Reveal>
               <div className="contact-footer">
                 <span>© 2026 Frederico Foini</span>
-                <span>Senior Product Owner · São Paulo</span>
+                <span>Data Analytics · Growth · Product · São Paulo</span>
                 <a href="#top">Back to top <ArrowUpRight size={13} aria-hidden="true" /></a>
               </div>
             </div>

@@ -795,6 +795,15 @@ img {
   font-style: italic;
 }
 
+.impact-copy > .mini-label {
+  display: block;
+  margin-top: 34px;
+}
+
+.impact-copy > .mini-label + .metric-grid {
+  margin-top: 14px;
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
